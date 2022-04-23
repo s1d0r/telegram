@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace s1d0r.telegram
@@ -8,6 +9,6 @@ namespace s1d0r.telegram
         public bool Ok { get; set; }
 
         [JsonPropertyName("result")]
-        public Result Result { get; set; }
+        public List<Result> Results { get; set; }
     }
 }
